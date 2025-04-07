@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div className="parent">
         {/* Do not remove the main div */}
+        <h1>Parent Component</h1>
         <ChildComponent1 implementOption={(e) => setSelectedOption(e.target.innerText)} />
         <ChildComponent2 implementOption={(e) => setSelectedOption(e.target.innerText)} />
         <p>Selected Option: {selectedOption}</p>
